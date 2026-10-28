@@ -1,5 +1,15 @@
-n = int(input())
-for i in range(n, 0, -1):
-    for j in range(i):
-        print(chr(65 + j), end=" ")
-    print()
+n = int(input("Enter number: "))
+
+i = 2
+prime = True
+
+while i <= n // 2:
+    if n % i == 0:
+        prime = False
+        break
+    i += 1
+
+if n > 1 and prime:
+    print("Prime")
+else:
+    print("Not Prime")

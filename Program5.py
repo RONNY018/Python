@@ -1,7 +1,10 @@
-n = int(input())
-fact = 1
-s = 1
-for i in range(1, n + 1):
-    fact *= i
-    s += 1 / fact
-print(s)
+n = int(input("Enter n: "))
+
+i = 1
+s = 0
+
+while i <= n:
+    s += i
+    i += 2
+
+print("Sum =", s)

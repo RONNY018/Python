@@ -1,5 +1,10 @@
-n = int(input())
-x = 1
-for i in range(n):
-    print(x, end=" ")
-    x *= 2
+n = int(input("Enter n: "))
+
+i = 1
+s = 0
+
+while i <= n:
+    s += i
+    i += 1
+
+print("Sum =", s)

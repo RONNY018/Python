@@ -1,6 +1,12 @@
-n = int(input("Enter a number: "))
+n = int(input("Enter number of terms: "))
 
-if n % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
+a = 0
+b = 1
+i = 1
+
+while i <= n:
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
+    i += 1

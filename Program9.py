@@ -1,5 +1,10 @@
-n = int(input())
-for i in range(1, n + 1):
-    for j in range(i):
-        print(chr(65 + j), end=" ")
-    print()
+n = int(input("Enter number: "))
+
+fact = 1
+i = 1
+
+while i <= n:
+    fact *= i
+    i += 1
+
+print("Factorial =", fact)
