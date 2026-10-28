@@ -1,10 +1,11 @@
-n = int(input("Enter n: "))
+s = input("Enter a string: ")
 
-i = 1
-s = 0
+reverse = ""
 
-while i <= n:
-    s += i
-    i += 1
+for ch in s:
+    reverse = ch + reverse
 
-print("Sum =", s)
+if s == reverse:
+    print("Palindrome")
+else:
+    print("Not Palindrome")

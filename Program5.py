@@ -1,10 +1,12 @@
-n = int(input("Enter n: "))
+s = input("Enter a string: ")
 
-i = 1
-s = 0
+upper = lower = 0
 
-while i <= n:
-    s += i
-    i += 2
+for ch in s:
+    if ch.isupper():
+        upper += 1
+    elif ch.islower():
+        lower += 1
 
-print("Sum =", s)
+print("Uppercase:", upper)
+print("Lowercase:", lower)

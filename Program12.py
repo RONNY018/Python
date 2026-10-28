@@ -1,14 +1,10 @@
-n = int(input("Enter number: "))
+s = input("Enter a sentence: ")
 
-temp = n
-rev = 0
+words = s.split()
+longest = ""
 
-while n > 0:
-    digit = n % 10
-    rev = rev * 10 + digit
-    n //= 10
+for word in words:
+    if len(word) > len(longest):
+        longest = word
 
-if temp == rev:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+print("Longest word:", longest)

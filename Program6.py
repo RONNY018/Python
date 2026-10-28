@@ -1,10 +1,13 @@
-n = int(input("Enter n: "))
+s = input("Enter a string: ")
+old = input("Enter character to replace: ")
+new = input("Enter new character: ")
 
-i = 2
-s = 0
+result = ""
 
-while i <= n:
-    s += i
-    i += 2
+for ch in s:
+    if ch == old:
+        result += new
+    else:
+        result += ch
 
-print("Sum =", s)
+print(result)

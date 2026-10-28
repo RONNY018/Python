@@ -1,5 +1,9 @@
-n = int(input("Enter n: "))
+s = input("Enter a string: ")
 
-while n >= 1:
-    print(n, end=" ")
-    n -= 1
+result = ""
+
+for ch in s:
+    if ch != " ":
+        result += ch
+
+print(result)

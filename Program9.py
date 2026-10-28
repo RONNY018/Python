@@ -1,10 +1,7 @@
-n = int(input("Enter number: "))
+s = input("Enter a string: ")
 
-fact = 1
-i = 1
-
-while i <= n:
-    fact *= i
-    i += 1
-
-print("Factorial =", fact)
+if len(s) > 0:
+    print("First character:", s[0])
+    print("Last character:", s[-1])
+else:
+    print("String is empty")

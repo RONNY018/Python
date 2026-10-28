@@ -1,6 +1,8 @@
-n = int(input("Enter n: "))
+s = input("Enter a string: ")
 
-i = 1
-while i <= n:
-    print(i, end=" ")
-    i += 2
+reverse = ""
+
+for ch in s:
+    reverse = ch + reverse
+
+print("Reverse:", reverse)

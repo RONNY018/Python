@@ -1,12 +1,10 @@
-n = int(input("Enter number of terms: "))
+s = input("Enter a string: ")
+ch = input("Enter character: ")
 
-a = 0
-b = 1
-i = 1
+count = 0
 
-while i <= n:
-    print(a, end=" ")
-    c = a + b
-    a = b
-    b = c
-    i += 1
+for c in s:
+    if c == ch:
+        count += 1
+
+print("Frequency:", count)
