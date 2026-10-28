@@ -1,7 +1,3 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-
-if a > b:
-    print("Largest =", a)
-else:
-    print("Largest =", b)
+n = int(input())
+for i in range(2, n + 1, 2):
+    print(i, end=" ")

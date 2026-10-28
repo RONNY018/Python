@@ -1,10 +1,17 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
+import math
 
-if a <= b and a <= c:
-    print("Smallest =", a)
-elif b <= a and b <= c:
-    print("Smallest =", b)
+n = int(input())
+r = int(math.sqrt(n))
+
+if r < 2:
+    print("Not Prime")
 else:
-    print("Smallest =", c)
+    prime = True
+    for i in range(2, int(math.sqrt(r)) + 1):
+        if r % i == 0:
+            prime = False
+            break
+    if prime:
+        print("Prime")
+    else:
+        print("Not Prime")

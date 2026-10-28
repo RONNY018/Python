@@ -1,6 +1,5 @@
-year = int(input("Enter year: "))
-
-if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
-    print("Leap Year")
-else:
-    print("Not a Leap Year")
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(i):
+        print(chr(65 + j), end=" ")
+    print()

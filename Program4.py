@@ -1,6 +1,5 @@
-ch = input("Enter a character: ")
-
-if ch in "AEIOUaeiou":
-    print("Vowel")
-else:
-    print("Consonant")
+n = int(input())
+x = 1
+for i in range(n):
+    print(x, end=" ")
+    x *= 2
